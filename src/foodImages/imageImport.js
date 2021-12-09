@@ -1,5 +1,5 @@
 import img1 from './burger.jpg'
-import img2 from './coffee.png'
+import img2 from './coffee.jpg'
 import img3 from './egg and salad.jpg'
 import img4 from './fries.jpg'
 import img5 from './pancake.jpg'

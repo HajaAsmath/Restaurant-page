@@ -10,8 +10,8 @@ const quotes = [['burger','The best burger in the worls from the best restaurant
                 ['pizza', 'Anyone who says that money cannot buy happiness has clearly never spent their money on pizza.'],
                 ['steak', 'The only time to eat diet food is while you`re waiting for the steak to cook.']];
 
-let menuPage = function() {
-    let menu = domutils.createDiv('content', 'home-content');
+export default function menuPage() {
+    let menu = domUtils.createDiv('menu-content', 'content');
 
     let head = domUtils.createDiv();
     let menuLabel = domUtils.createLabel('menu-label')
@@ -19,6 +19,7 @@ let menuPage = function() {
     head.appendChild(menuLabel);
 
     let borderImg = domUtils.createImg(border, 'border');
+    let borderImg1 = domUtils.createImg(border, 'border');
 
     menu.appendChild(head);
     menu.appendChild(borderImg);
@@ -27,9 +28,9 @@ let menuPage = function() {
         let item = domUtils.createDiv(null, 'items');
         let img = domUtils.createImg(images[i], null, quotes[i][0], 'food-img');
         let desc = domUtils.createPara(null, 'food-desc');
-        let price = domUtils.createLabel(null, 'food-desc price');
-        price.textContent(Math.floor((Math.random() * 100) + 1));
-        desc.textContent(quotes[i][1]);
+        let price = domUtils.createLabel(null, 'price');
+        price.textContent = '$' + Math.floor((Math.random() * 100) + 1);
+        desc.textContent = quotes[i][1];
 
         item.appendChild(img);
         item.appendChild(desc);
@@ -38,9 +39,7 @@ let menuPage = function() {
         menu.appendChild(item);
     }
 
-    menu.appendChild(borderImg);
+    menu.appendChild(borderImg1);
 
     return menu;
 };
-
-export default menuPage;
