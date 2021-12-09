@@ -2,8 +2,8 @@ import homePage from './home-page.js';
 import menuPage from './menu-page.js';
 import contactPage from './contact-page.js';
 import navTab from './nav-tab.js'
-import './style.css'
-import domUtils from './domUtils.js';
+import './style/style.css'
+import domUtils from './utils/domUtils.js';
 
 (function() {
     let mainContent;

@@ -3,7 +3,8 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 module.exports = {
     mode: 'development',
     entry: {
-        main: ['./src/index.js','./src/domUtils.js','./src/contact-page.js','./src/home-page.js','./src/menu-page.js','./src/nav-tab.js']
+        main: ['./src/index.js','./src/utils/domUtils.js','./src/pages/contact-page.js','./src/pages/home-page.js','./src/pages/menu-page.js',
+        './src/pages/nav-tab.js']
     },
     devtool: 'inline-source-map',
     plugins: [
