@@ -1,6 +1,6 @@
-import domUtils from './domUtils.js'
-import images from './foodImages/imageImport'
-import border from './border.png'
+import domUtils from '../utils/domUtils.js'
+import images from '../foodImages/imageImport'
+import border from '../pngs/border.png'
 
 const quotes = [['burger','The best burger in the worls from the best restaurant in the world. Have a fat filled piece of american breakfast in the world of rich and wealthy'],
                 ['coffee','A refreshing coffee made by a wonderful coffee maker in the world from the world`s top barissta'],

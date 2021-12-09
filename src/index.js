@@ -1,7 +1,7 @@
-import homePage from './home-page.js';
-import menuPage from './menu-page.js';
-import contactPage from './contact-page.js';
-import navTab from './nav-tab.js'
+import homePage from './pages/home-page.js';
+import menuPage from './pages/menu-page.js';
+import contactPage from './pages/contact-page.js';
+import navTab from './pages/nav-tab.js'
 import './style/style.css'
 import domUtils from './utils/domUtils.js';
 

@@ -1,4 +1,4 @@
-import domUtils from './domUtils.js';
+import domUtils from '../utils/domUtils.js';
 
 export default function navTab() {
     let navTab = domUtils.createDiv('nav-tab');
