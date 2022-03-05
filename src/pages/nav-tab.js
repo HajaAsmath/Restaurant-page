@@ -1,17 +1,17 @@
 import domUtils from '../utils/domUtils.js';
 
 export default function navTab() {
-    let navTab = domUtils.createDiv('nav-tab');
-    let home = domUtils.createDiv('home');
-    home.textContent = 'Home';
-    let menu = domUtils.createDiv('menu');
-    menu.textContent = 'Menu';
-    let contact = domUtils.createDiv('contact');
-    contact.textContent = 'Contact';
+  const navTab = domUtils.createDiv('nav-tab');
+  const home = domUtils.createDiv('home');
+  home.textContent = 'Home';
+  const menu = domUtils.createDiv('menu');
+  menu.textContent = 'Menu';
+  const contact = domUtils.createDiv('contact');
+  contact.textContent = 'Contact';
 
-    navTab.appendChild(home);
-    navTab.appendChild(menu);
-    navTab.appendChild(contact);
+  navTab.appendChild(home);
+  navTab.appendChild(menu);
+  navTab.appendChild(contact);
 
-    return navTab;
+  return navTab;
 }
